@@ -19,6 +19,8 @@
     font-style: normal;
     font-variant-numeric: tabular-nums lining-nums;
     font-size: 16px;
+
+    color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -305,10 +307,6 @@ li {
 
 li::marker {
     line-height: 0;
-}
-
-::-webkit-scrollbar {
-    height: var(--line-height);
 }
 
 input, button, textarea {

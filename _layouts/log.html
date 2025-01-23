@@ -2,12 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="generator" content="pandoc"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-    <meta name="author" content="Gerard Gascón"/>
     <meta name="dcterms.date" content="{{ page.date | date: '%Y-%m-%d' }}"/>
-    <meta name="fediverse:creator" content="@geri@mastodon.gamedev.place" />
+
+    <meta name="author" content="Gerard Gascón"/>
     <meta name="description" content="{{ page.subtitle }}" />
+
+    <meta name="fediverse:creator" content="@geri@mastodon.gamedev.place" />
+
+    <meta property="og:title" content="{{ page.title }} | Geri's Logs" />
+    <meta property="og:description" content="{{ page.subtitle }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Geri's Logs" />
+    <meta property="og:image" content="/assets/images/artboard.png" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
 
     <title>{{ page.title }} | Geri's Logs</title>
     <link rel="icon" type="image/svg" href="/assets/images/favicon.svg"/>

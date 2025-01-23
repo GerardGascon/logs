@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="author" content="Gerard Gascón"/>
+    <meta name="dcterms.date" content="{{ page.date | date: '%Y-%m-%d' }}"/>
+    <meta name="fediverse:creator" content="@geri@mastodon.gamedev.place" />
+    <meta name="description" content="{{ page.subtitle }}" />
+
+    <title>{{ page.title }} | Geri's Logs</title>
+    <link rel="icon" type="image/svg" href="/assets/images/favicon.svg"/>
+
+    <link rel="stylesheet" href="/assets/css/reset.css"/>
+    <link rel="stylesheet" href="/assets/css/index.css"/>
+</head>
+<body>
+<span>
+    <a href="/">Geri's Logs</a> / <a href="">{{ page.title }}</a> /
+</span>
+<table class="header">
+    <tr>
+        <td colspan="2" rowspan="2" class="width-auto">
+            <h1 class="title">{{ page.title }}</h1>
+            <span class="subtitle">{{ page.subtitle }}</span>
+        </td>
+        <th>Version</th>
+        <td class="width-min">v{{ page.version }}</td>
+    </tr>
+    <tr>
+        <th>Updated</th>
+        <td class="width-min">
+            <time style="white-space: pre;">{{ page.date | date: '%Y-%m-%d' }}</time>
+        </td>
+    </tr>
+    <tr>
+        <th class="width-min">Author</th>
+        <td class="width-auto"><a href="https://gerardgascon.com"><cite>Gerard Gascón</cite></a></td>
+        <th class="width-min">License</th>
+        <td>CC BY 4.0</td>
+    </tr>
+</table>
+
+{% if page.toc %}
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+    {% toc %}
+</nav>
+{% endif %}
+
+{{ content }}
+
+<div class="debug-grid"></div>
+<script src="/assets/js/index.js"></script>
+</body>
+</html>

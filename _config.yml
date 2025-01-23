@@ -1,0 +1,18 @@
+title: Geri's Logs
+url: "https://logs.gerardgascon.com"
+baseurl: ""
+
+description:
+  This is a place to simply log my projects' progress.
+
+collections:
+  logs:
+    output: true
+    permalink: /logs/:title
+
+plugins:
+  - jekyll-toc
+
+toc:
+  list_class: incremental
+  list_id: null

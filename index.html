@@ -1,0 +1,86 @@
+---
+title: "Geri's Logs"
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="author" content="Gerard Gascón"/>
+    <meta name="dcterms.date" content="{{ site.time | date: '%Y-%m-%d' }}"/>
+    <meta name="fediverse:creator" content="@geri@mastodon.gamedev.place" />
+    <meta name="description" content="{{ site.description }}" />
+
+    <title>Geri's Logs</title>
+    <link rel="icon" type="image/svg" href="/assets/images/favicon.svg"/>
+
+    <link rel="stylesheet" href="/assets/css/reset.css"/>
+    <link rel="stylesheet" href="/assets/css/index.css"/>
+</head>
+<body>
+<span>
+    <a href="/">Geri's Logs</a> /
+</span>
+<table class="header">
+    <tr>
+        <td colspan="2" rowspan="2" class="width-auto">
+            <h1 class="title">Geri's Logs</h1>
+            <span class="subtitle">A place to simply log my projects' progress</span>
+        </td>
+        <th>Version</th>
+        <td class="width-min">v0.1</td>
+    </tr>
+    <tr>
+        <th>Updated</th>
+        <td class="width-min">
+            <time style="white-space: pre;">{{ site.time | date: '%Y-%m-%d' }}</time>
+        </td>
+    </tr>
+    <tr>
+        <th class="width-min">Author</th>
+        <td class="width-auto"><a href="https://gerardgascon.com"><cite>Gerard Gascón</cite></a></td>
+        <th class="width-min">License</th>
+        <td>CC BY 4.0</td>
+    </tr>
+</table>
+<h2 id="introduction">About</h2>
+<p>This corner of the internet is a place for me to tell the progress of my
+    personal projects.</p>
+<p>On this page you will probably find a wide variety of posts. Some of them
+    may be long and detailed ones, others may be shorter with fewer descriptions
+    of the content inside.</p>
+
+<h2 id="my-logs">My logs</h2>
+{% for log in site.logs %}
+<a class="log" href="{{ log.url }}">
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2" class="width-auto">
+                <h1 class="title">{{ log.title }}</h1>
+                <span class="subtitle">{{ log.subtitle }}</span>
+            </td>
+            <th>Version</th>
+            <td class="width-min">v{{ log.version }}</td>
+        </tr>
+        <tr>
+            <th>Updated</th>
+            <td class="width-min">
+                <time style="white-space: pre;">{{ log.date | date: '%Y-%m-%d' }}</time>
+            </td>
+        </tr>
+    </table>
+</a>
+{% endfor %}
+
+<h2 id="discussion">Copyright</h2>
+<p>Except where otherwise noted, the 'logs' on this site are licensed under
+    the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Gerard Gascón.</p>
+<p>The original source for this template belongs to Oskar Wickström under the MIT License.</p>
+<p>The full source code is here: <a
+        href="https://github.com/owickstrom/the-monospace-web">github.com/owickstrom/the-monospace-web</a></p>
+<div class="debug-grid"></div>
+<script src="/assets/js/index.js"></script>
+</body>
+</html>

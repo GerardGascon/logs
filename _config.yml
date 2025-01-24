@@ -5,6 +5,10 @@ baseurl: ""
 description:
   This is a place to simply log my projects' progress.
 
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+
 collections:
   logs:
     output: true

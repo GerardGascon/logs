@@ -90,6 +90,16 @@ hr {
     color: var(--text-color);
 }
 
+.location-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.location-header span {
+    margin-top: 0;
+}
+
 hr:after {
     display: block;
     content: "";

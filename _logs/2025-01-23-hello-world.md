@@ -2,7 +2,6 @@
 layout: log
 title: "Hello, World!"
 subtitle: "A page to preview the Markdown styling"
-date:   2025-01-23 21:10:38 +0100
 version: 0.1
 toc: false
 ---

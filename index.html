@@ -69,7 +69,7 @@ title: "Geri's Logs"
     of the content inside.</p>
 
 <h2 id="my-logs">My logs</h2>
-{% for log in site.logs %}
+{% for log in site.logs reversed %}
 <a class="log" href="{{ log.url }}">
     <table>
         <tr>

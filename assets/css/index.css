@@ -265,10 +265,19 @@ figure {
     overflow-y: hidden;
 }
 
-figcaption {
+img {
+    margin-top: calc(var(--line-height) * 2);
+    margin-left: 3ch;
+    margin-right: 3ch;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+img + em {
     display: block;
     font-style: italic;
-    margin-top: var(--line-height);
+    margin: var(--line-height) 3ch calc(var(--line-height) * 2);
 }
 
 ul, ol {

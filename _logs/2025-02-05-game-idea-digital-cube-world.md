@@ -31,4 +31,4 @@ make your little worlds grow.
 If I ever turn this into reality:
 
 1. I will try finding a way to make this exchange viable.
-2. It won't be a 1:1 version of the physical toy, but rather an _inspired by_ game.
+2. It won't be a 1:1 version of the physical toy, but rather an \*_inspired by_\* game.

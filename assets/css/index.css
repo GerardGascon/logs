@@ -277,7 +277,7 @@ img {
 img + em {
     display: block;
     font-style: italic;
-    margin: var(--line-height) 3ch calc(var(--line-height) * 2);
+    margin: 0 3ch calc(var(--line-height) * 2);
 }
 
 ul, ol {
